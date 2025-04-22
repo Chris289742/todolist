@@ -1,0 +1,109 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg,
+            rgba(43, 155, 211, 0.5),
+            rgba(26, 57, 212, 0.5))
+}
+
+.container {
+    border: 2px solid #fff;
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px;
+}
+
+#newtask {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+#newtask input {
+    width: 70%;
+    height: 45px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    border: 2px solid #d2d5d6;
+    padding: 20px;
+    font-weight: 500;
+}
+
+#newtask input:focus {
+    /* get rid of default outline */
+    outline: none;
+    border: 2px solid #2c57f3;
+}
+
+#newtask button {
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    vertical-align: bottom;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: rgb(73, 101, 211);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#newtask button:hover {
+    background-color: #1e3bbf;
+}
+
+#tasks {
+    background-color: #fff;
+    margin-top: 60px;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    /* position: relative; */
+}
+
+.task {
+    background-color: #fff;
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #d2d5d6;
+    cursor: pointer;
+}
+
+.task span {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400px;
+    font-size: 16px;
+}
+
+.task button {
+    height: 100%;
+    width: 40px;
+    border-radius: 4px;
+    border: none;
+    background-color: #ff4d4d;
+    color: #fff;
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+}
